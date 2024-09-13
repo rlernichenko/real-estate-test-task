@@ -1,0 +1,62 @@
+.real-estate-item {
+  margin-bottom: 55px;
+}
+.real-estate-item .entry-thumbnail img {
+  border-radius: 34px;
+}
+.real-estate-item .entry-content {
+  margin-top: 21px;
+}
+.real-estate-item .entry-content .entry-title {
+  margin-bottom: 21px;
+}
+.real-estate-item .entry-content .option-item__icon {
+  width: 21px;
+}
+.real-estate-item .entry-content .option-item__title {
+  margin-left: 13px;
+}
+.real-estate-item .entry-footer {
+  margin-top: 21px;
+}
+
+.real-estate-single .entry-title {
+  margin: 21px 0 21px;
+}
+.real-estate-single .entry-thumbnail {
+  width: 100%;
+  max-height: 460px;
+  overflow: hidden;
+  border-radius: 34px;
+}
+.real-estate-single .entry-thumbnail img {
+  width: 100%;
+  border-radius: 34px;
+}
+.real-estate-single .apartment-list .apartment-item {
+  height: 150px;
+  margin-bottom: 21px;
+  background-color: #f2f2f2;
+  border-radius: 21px;
+}
+.real-estate-single .apartment-list .apartment-item__img {
+  width: 150px;
+  border-radius: 21px;
+}
+.real-estate-single .apartment-list .apartment-item__content {
+  padding: 0 21px;
+}
+.real-estate-single .apartment-list .apartment-item__content .apartment-option-item__icon {
+  width: 21px;
+}
+.real-estate-single .apartment-list .apartment-item__content .apartment-option-item__title {
+  margin-left: 8px;
+}
+.real-estate-single .options-list .option-item__icon {
+  width: 21px;
+}
+.real-estate-single .options-list .option-item__title {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */

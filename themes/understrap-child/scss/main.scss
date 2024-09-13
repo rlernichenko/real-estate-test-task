@@ -1,0 +1,95 @@
+
+
+.real-estate-list{
+
+}
+
+.real-estate-item{
+	margin-bottom: 55px;
+
+	.entry-thumbnail{
+		img{
+			border-radius: 34px;
+		}
+	}
+
+	.entry-content{
+		margin-top: 21px;
+
+		.entry-title{
+			margin-bottom: 21px;
+		}
+
+		.option-item{
+			&__icon{
+				width: 21px;
+			}
+			&__title{
+				margin-left: 13px;
+			}
+			&__value{}
+		}
+	}
+
+	.entry-footer{
+		margin-top: 21px;
+	}
+}
+
+
+
+.real-estate-single{
+	.entry-title{
+		margin: 21px 0 21px;
+	}
+
+	.entry-thumbnail{
+		width: 100%;
+		max-height: 460px;
+		overflow: hidden;
+		border-radius: 34px;
+
+		img{
+			width: 100%;
+			border-radius: 34px;
+		}
+	}
+
+	.apartment-list{
+		.apartment-item{
+			height: 150px;
+			margin-bottom: 21px;
+			background-color: #f2f2f2;
+			border-radius: 21px;
+
+			&__thumb{}
+			&__img{
+				width: 150px;
+				border-radius: 21px;
+			}
+			&__content{
+				padding: 0 21px;
+
+				.apartment-option-item{
+					&__icon{
+						width: 21px;
+					}
+					&__title{
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+	}
+
+	.options-list{
+		.option-item{
+			&__icon{
+				width: 21px;
+			}
+			&__title{
+				margin-left: 8px;
+			}
+		}
+	}
+}
