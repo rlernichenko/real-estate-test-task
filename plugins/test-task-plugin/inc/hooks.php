@@ -28,23 +28,18 @@ add_action( 'wp_update_nav_menu_item', 'add_real_estate_posts_to_menu', 10, 3 );
 
 
 class Real_Estate_Query {
-	// Конструктор класу
 	public function __construct() {
 		add_action( 'pre_get_posts', array( $this, 'modify_real_estate_query' ) );
 	}
 
-	// Метод для модифікації основного query
 	public function modify_real_estate_query( $query ) {
-		// Перевіряємо, чи основний query та чи це запит кастомного типу постів 'real-estate'
 		if ( ! is_admin() && $query->is_main_query() && is_post_type_archive( 'real-estate' ) ) {
-			// Сортуємо пости за кастомним полем 'ecological_rating' (екологічність)
-			$query->set( 'meta_key', 'environmental_friendliness' );  // вкажіть правильну назву поля
-			$query->set( 'orderby', 'meta_value_num' );  // сортуємо як числа
-			$query->set( 'order', 'DESC' );  // сортування від більшого до меншого
+			$query->set( 'meta_key', 'environmental_friendliness' );
+			$query->set( 'orderby', 'meta_value_num' );
+			$query->set( 'order', 'DESC' );
 		}
 	}
 }
 
-// Ініціалізація класу
 new Real_Estate_Query();
 
