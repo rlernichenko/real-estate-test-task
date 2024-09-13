@@ -127,6 +127,11 @@ function filter_real_estate_callback() {
 
 			$add_post = false;
 
+			if ( empty($_POST['min_area']) && empty($_POST['max_area']) && empty($_POST['rooms_count']) &&
+			     empty($_POST['balcony']) && empty($_POST['bathroom']) ){
+				$add_post = true;
+			}
+
 			if( have_rows('apartment') ){
 				while( have_rows('apartment') ){
 					the_row();
